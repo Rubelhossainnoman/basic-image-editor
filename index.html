@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+    <title>Image Editor</title>
+    <link rel="shortcut icon" href="./assets/img/Rubel Hossain (Noman).jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+
+
+<!-- of disable class here -->
+    <div class="container disable">
+      <h2 id="editor_title">Easy Image Editor</h2>
+      <div class="wrapper">
+        <div class="editor-panel">
+          <div class="fillter">
+            <label class="title">Filters</label>
+            <div class="options">
+              <button id="brightness" class="active">Brightness</button>
+              <button id="saturation">Saturation</button>
+              <button id="inversion">Inversion</button>
+              <button id="grayscale">Grayscale</button>
+            </div>
+            <div class="slider">
+              <div class="filter-info">
+                <p class="name">Brightness</p>
+                <p class="value">100%</p>
+              </div>
+              <input type="range" value="100" min="0" max="200" name="" id="">
+            </div>
+          </div>
+          <div class="rotate">
+            <label class="title">Rotate & Filp</label>
+            <div class="options">
+              <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+              <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+              <button id="vr"><i class="bi bi-vr"></i></button>
+              <button id="hr"><i class="bi bi-hr"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="preview-img">
+          <img src="./assets/img/image-placeholder.svg" alt="preview-image">
+        </div>
+      </div>
+      <div class="contronls">
+        <button class="reset-filter">Reset Filters</button>
+        <div class="take-img">
+          <input type="file" class="file-input" hidden accept="image/*">
+          <button class="choose-img">Choose Image</button>
+          <button class="save-img">Save Image</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- For icons import -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="./assets/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/js/function.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
